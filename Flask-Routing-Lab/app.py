@@ -7,12 +7,12 @@ app = Flask(  # Create a flask app
     static_folder='static'  # Name of directory for static files
 )
 
-# Your code should be below
+@app.route('/')
+def first():
+    return render_template("home.html")
 
 
 
-
-# Your code should be above
 
 if __name__ == "__main__":  # Makes sure this is the main process
     app.run(debug=True)

@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Product</title>
+    <title>Cart</title>
+    <style type="text/css" src=""></style>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css" src="/static/css/style.css"></style>
 </head>
 <body>
+    <img id="logo" src="/static/ebay.png" width="100" length="100" style="text-align: left;">
+    <nav class="navbar ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">Shop by Category</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="navg" class="active"><a href="#">Home</a></li>
+                <li class="navg"><a href="#">Cart</a></li>
+                <li class="navg"><a href="#">Products</a></li>
+            </ul>
+        </div>
 
+    </nav>
+    <div class="card">
+        <img src="https://p.turbosquid.com/ts-thumb/wH/UWBND2/XQ/black01/jpg/1628709049/600x600/fit_q87/795c3e251e682fb150fdc86833ba87234a36b34d/black01.jpg" alt="phone" width="200" length="200">
+        <h1>zflip 3</h1>
+        <p class="price">3,000</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <img src="https://store.ite.net/wp-content/uploads/2020/09/Samsung-Galaxy-Buds-Live-True-Wireless-Earbud-Headphones-Black4.png" alt="phone" width="200" length="200">
+        <h1>samsung buds</h1>
+        <p class="price">500</p>
+        <p><button>Add to Cart</button></p>
+    </div>
 </body>
 </html>

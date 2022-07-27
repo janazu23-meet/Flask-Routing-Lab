@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <style type="text/css" src="style.css"></style>
+    <style type="text/css" src=""></style>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css" src="/static/css/style.css"></style>
 </head>
 <body>
     <img id="logo" src="/static/ebay.png" width="100" length="100" style="text-align: left;">
@@ -18,14 +20,27 @@
                 <a class="navbar-brand">Shop by Category</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="navg" class="active"><a href="#">Home</a></li>
-                <li class="navg"><a href="#">Cart</a></li>
-                <li class="navg"><a href="#">Products</a></li>
+                <li class="navg" class="active"><a href="{{ url_for('first') }}">Home</a></li>
+                <li class="navg"><a href="{{ url_for('second') }}”">Products</a></li>
+                <li class="navg"><a href="{{ url_for('third') }}">Cart</a></li>
+                
             </ul>
         </div>
+
     </nav>
-    <
-  
+    <h3 style="color:#2982a9;"> Explore popular categories </h3>
+    <div class="row">
+        <div class="column">
+            <img src="https://static.wixstatic.com/media/e96062_a6d9287157e84ced89fd3a1f7a2262f0~mv2.png/v1/crop/x_205,y_316,w_537,h_722/fill/w_194,h_256,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/iphone-13-blue-select-2021.png" alt="Phone" width="200" length="200">
+        </div>
+        <div class="column">
+            <img src="https://pngimg.com/uploads/converse/converse_PNG1.png" alt="shoes" length="200" width="200">
+        </div>
+        <div class="column">
+            <img src="https://www.pngall.com/wp-content/uploads/2016/07/Xbox-Free-Download-PNG.png" alt="console" width="200" length="200">
+        </div>
+    </div>
+
 <div class="container">
 
 </body>
